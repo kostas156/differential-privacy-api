@@ -36,6 +36,4 @@ class DPNoiseResponse(BaseModel):
     scale: float = Field(
         description="The Laplace distribution scale parameter (sensitivity / epsilon)."
     )
-    privacy_budget_consumed: float = Field(
-        description="Equal to epsilon - confirms the budget that has been spent."
-    )
+    
