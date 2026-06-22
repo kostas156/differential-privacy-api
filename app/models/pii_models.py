@@ -7,7 +7,7 @@ class PIIMaskRequest(BaseModel):
         min_length=1, 
         max_length=10_000, 
         description="The unstructured text to scan for PIIs.",
-        example="My name is John Doe and my email is john@example.com"
+        examples=["My name is John Doe and my email is john@example.com"]
     )
     entities: Optional[List[str]] = Field(
         default=None,

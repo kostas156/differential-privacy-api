@@ -10,8 +10,6 @@ class Settings(BaseSettings):
     default_epsilon: float = 1.0
     default_sensitivity: float = 1.0
 
-    class Config:
-        env_file = ".env"
-
+    model_config = {"env_file": ".env"}
 
 settings = Settings()
